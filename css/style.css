@@ -1,0 +1,17 @@
+/* debugging */
+* {
+  border: 1px solid #c51f5d;
+  margin: 4px;
+}
+
+/* currently color palette:
+    - Night Mode Twitter
+    - https://www.color-hex.com/color-palette/55334
+*/
+:root {
+  --background: #141d26;
+  --tile: #243447;
+  --tile2: #243447;
+  --accent: #c51f5d;
+  --text: #ffffff;
+}
