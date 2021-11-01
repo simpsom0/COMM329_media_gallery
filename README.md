@@ -1,5 +1,27 @@
 # COMM329_media_gallery
 
+## To Do
+  - [x] Choose topic for media gallery
+    - **My photos**
+    - Bruce theme?
+  - [ ] Build wireframe
+  - [ ] Choose layout for:
+    - [ ] Overall layout
+    - [ ] Masonry image tiling
+    - [ ] Slideshow
+  - [ ] Design media card
+  - [ ] Make header & footer
+  - [ ] Add JavaScript for
+    - [ ] Slider animations
+    - [ ] Mobile nav
+    - [ ] Extended image modals
+  - [ ] Add animations
+  - [ ] Add media queries
+  - [ ] Add images
+  - [ ] Add descriptions
+
+---
+
 ## Project Scenario
 Your new client is asking for an interactive web page
 to display a collection of photos and text, both as
@@ -31,23 +53,3 @@ theme, that’s probably for the best.*
 
 ## Wireframe
 ![component wireframe image](/img/wireframe.png)
-
-
----
-
-
-# To Do
-  - [ ] Choose topic for media gallery
-  - [ ] Build wireframe
-  - [ ] Choose layout for:
-    - [ ] Overall layout
-    - [ ] Masonry image tiling
-    - [ ] Slideshow
-  - [ ] Design media card
-  - [ ] Make header & footer
-  - [ ] Add JavaScript for
-    - [ ] Slider animations
-    - [ ] Mobile nav
-    - [ ] Extended image modals
-  - [ ] Add animations
-  - [ ] Add media queries
