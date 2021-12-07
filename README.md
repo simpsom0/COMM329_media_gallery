@@ -1,23 +1,39 @@
 # COMM329_media_gallery
 
+## For tomorrow
+  - work on cards
+  - work on modals
+
+
 ## To Do
   - [x] Choose topic for media gallery
     - **My photos**
     - Bruce theme?
-  - [ ] Build wireframe
   - [ ] Choose layout for:
-    - [ ] Overall layout
-    - [ ] Masonry image tiling
+    - [x] Overall layout
+      - Overall flex
+      - Masonry grid for media cards
+    - [x] Masonry image tiling
     - [ ] Slideshow
+  - [x] Build wireframe
   - [ ] Design media card
-  - [ ] Make header & footer
+  - [X] Build slideshow
+    - [X] Build frame
+      - [X] Main image
+        - [X] Fill certain ratio so every image is same size
+      - [ ] Bottom small view
+      - [X] prev/next buttons
+      - [X] captions
+    - [X] Connect js
+  - [X] Make header & footer
   - [ ] Add JavaScript for
-    - [ ] Slider animations
+    - [X] Slider animations
     - [ ] Mobile nav
     - [ ] Extended image modals
+  - [ ] Polish image modals
   - [ ] Add animations
   - [ ] Add media queries
-  - [ ] Add images
+  - [X] Add images
   - [ ] Add descriptions
 
 ---
