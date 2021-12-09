@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-
+    <title>Media Gallery</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,6 +13,7 @@
 
   <body>
     <nav class="header">
+      <a href="javascript:void(0);" class="nav-item trigram">&#9776;</a>
       <a class="nav-item">
         <span><i class="fas fa-arrow-left"></i> Back</span>
       </a>
@@ -57,27 +58,24 @@
           <div class="caption">MORE mountains (very cool)!</div>
         </div>
 
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
       </div>
     </section>
 
     <main class="gallery">
-      <div class="grid-item one">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <!-- NOTE: Would like below line to not be necessary,
-                     Preferably the whole media card would act as a "button" -->
-          <button data-modal="#01" class="show-modal button">View</button>
+      <div class="grid-item one" id='0'>
+        <div class="img-small" id='0'></div><hr />
+        <div class="card-content" id='0'>
+          <h4 class="card-title" id='0'>Lorem ipsum</h4>
+          <p class="card-text" id='0'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="01" class="modal">
+      <div id="modal0" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/1.jpg"/>
+            <img src="img/1.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -86,19 +84,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item two">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#02" class="show-modal button">View</button>
+      <div class="grid-item two" id='1'>
+        <div class="img-small" id='1'></div><hr />
+        <div class="card-content" id='1'>
+          <h4 class="card-title" id='1'>Lorem ipsum</h4>
+          <p class="card-text" id='1'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="02" class="modal">
+      <div id="modal1" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/2.jpg"/>
+            <img src="img/2.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -107,19 +104,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item three">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#03" class="show-modal button">View</button>
+      <div class="grid-item three" id='2'>
+        <div class="img-small" id='2'></div><hr />
+        <div class="card-content" id='2'>
+          <h4 class="card-title" id='2'>Lorem ipsum</h4>
+          <p class="card-text" id='2'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="03" class="modal">
+      <div id="modal2" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/3.jpg"/>
+            <img src="img/3.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -128,19 +124,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item four">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#04" class="show-modal button">View</button>
+      <div class="grid-item four" id='3'>
+        <div class="img-small" id='3'></div><hr />
+        <div class="card-content" id='3'>
+          <h4 class="card-title" id='3'>Lorem ipsum</h4>
+          <p class="card-text" id='3'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="04" class="modal">
+      <div id="modal3" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/4.jpg"/>
+            <img src="img/4.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -149,19 +144,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item five">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#05" class="show-modal button">View</button>
+      <div class="grid-item five" id='4'>
+        <div class="img-small" id='4'></div><hr />
+        <div class="card-content" id='4'>
+          <h4 class="card-title" id='4'>Lorem ipsum</h4>
+          <p class="card-text" id='4'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="05" class="modal">
+      <div id="modal4" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/5.jpg"/>
+            <img src="img/5.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -170,19 +164,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item six">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#06" class="show-modal button">View</button>
+      <div class="grid-item six" id='5'>
+        <div class="img-small" id='5'></div><hr />
+        <div class="card-content" id='5'>
+          <h4 class="card-title" id='5'>Lorem ipsum</h4>
+          <p class="card-text" id='5'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="06" class="modal">
+      <div id="modal5" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/6.jpg"/>
+            <img src="img/6.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -191,19 +184,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item seven">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#07" class="show-modal button">View</button>
+      <div class="grid-item seven" id='6'>
+        <div class="img-small" id='6'></div><hr />
+        <div class="card-content" id='6'>
+          <h4 class="card-title" id='6'>Lorem ipsum</h4>
+          <p class="card-text" id='6'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="07" class="modal">
+      <div id="modal6" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/7.jpg"/>
+            <img src="img/7.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -212,19 +204,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item eight">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#08" class="show-modal button">View</button>
+      <div class="grid-item eight" id='7'>
+        <div class="img-small" id='7'></div><hr />
+        <div class="card-content" id='7'>
+          <h4 class="card-title" id='7'>Lorem ipsum</h4>
+          <p class="card-text" id='7'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="08" class="modal">
+      <div id="modal7" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/8.jpg"/>
+            <img src="img/8.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -233,19 +224,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item nine">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#09" class="show-modal button">View</button>
+      <div class="grid-item nine" id='8'>
+        <div class="img-small" id='8'></div><hr />
+        <div class="card-content" id='8'>
+          <h4 class="card-title" id='8'>Lorem ipsum</h4>
+          <p class="card-text" id='8'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="09" class="modal">
+      <div id="modal8" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/9.jpg"/>
+            <img src="img/9.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -254,19 +244,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item ten">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#10" class="show-modal button">View</button>
+      <div class="grid-item ten" id='9'>
+        <div class="img-small" id='9'></div><hr />
+        <div class="card-content" id='9'>
+          <h4 class="card-title" id='9'>Lorem ipsum</h4>
+          <p class="card-text" id='9'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="10" class="modal">
+      <div id="modal9" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/10.jpg"/>
+            <img src="img/10.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -275,19 +264,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item eleven">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#11" class="show-modal button">View</button>
+      <div class="grid-item eleven" id='10'>
+        <div class="img-small" id='10'></div><hr />
+        <div class="card-content" id='10'>
+          <h4 class="card-title" id='10'>Lorem ipsum</h4>
+          <p class="card-text" id='10'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="11" class="modal">
+      <div id="modal10" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/11.jpg"/>
+            <img src="img/11.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -296,19 +284,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item twelve">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#12" class="show-modal button">View</button>
+      <div class="grid-item twelve" id='11'>
+        <div class="img-small" id='11'></div><hr />
+        <div class="card-content" id='11'>
+          <h4 class="card-title" id='11'>Lorem ipsum</h4>
+          <p class="card-text" id='11'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="12" class="modal">
+      <div id="modal11" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/12.jpg"/>
+            <img src="img/12.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -317,19 +304,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item thirteen">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#13" class="show-modal button">View</button>
+      <div class="grid-item thirteen" id='12'>
+        <div class="img-small" id='12'></div><hr />
+        <div class="card-content" id='12'>
+          <h4 class="card-title" id='12'>Lorem ipsum</h4>
+          <p class="card-text" id='12'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="13" class="modal">
+      <div id="modal12" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/13.jpg"/>
+            <img src="img/13.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -338,19 +324,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item fourteen">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#14" class="show-modal button">View</button>
+      <div class="grid-item fourteen" id='13'>
+        <div class="img-small" id='13'></div><hr />
+        <div class="card-content" id='13'>
+          <h4 class="card-title" id='13'>Lorem ipsum</h4>
+          <p class="card-text" id='13'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="14" class="modal">
+      <div id="modal13" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/14.jpg"/>
+            <img src="img/14.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -359,19 +344,18 @@
   		  </div>
   		</div>
 
-      <div class="grid-item fifteen">
-        <div class="img-small"></div><hr />
-        <div class="card-content">
-          <h4 class="card-title">Lorem ipsum</h4>
-          <p class="card-text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button data-modal="#15" class="show-modal button">View</button>
+      <div class="grid-item fifteen" id='14'>
+        <div class="img-small" id='14'></div><hr />
+        <div class="card-content" id='14'>
+          <h4 class="card-title" id='14'>Lorem ipsum</h4>
+          <p class="card-text" id='14'>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div id="15" class="modal">
+      <div id="modal14" class="modal">
   		  <div class="modal-content">
-  		    <span class="close">&times;</span>
   				<div class="modal-body">
-            <img src="img/15.jpg"/>
+            <img src="img/15.jpg" class="modal_img"/>
+            <div class="vertical_line"></div>
   					<div class="modal-text">
   						<h3>Lorem ipsum</h3>
   						<p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.</p>
@@ -382,8 +366,11 @@
     </main>
 
     <footer>
-      <p class="footer_text">&#169; Michael Simpson</p>
+      <p class="copyright">&#169; </p><p class="footer_text">Michael Simpson</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="js/page.js" type="text/javascript"></script>
   </body>
 </html>

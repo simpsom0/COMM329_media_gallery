@@ -1,27 +1,31 @@
 # COMM329_media_gallery
 
-## For tomorrow
-  - work on cards
-  - work on modals
+## For today
+  - [X] make modals fit media queries
+  - [ ] make menu button
+  - [ ] hover animations for topnav
 
+  - find out where to apply vertical modals
+    - corresponds to text overflowing (tree one)
+  - modal-content is redundant (see debug view)
 
 ## To Do
   - [x] Choose topic for media gallery
     - **My photos**
     - Bruce theme?
-  - [ ] Choose layout for:
+  - [X] Choose layout for:
     - [x] Overall layout
       - Overall flex
       - Masonry grid for media cards
     - [x] Masonry image tiling
-    - [ ] Slideshow
+    - [X] Slideshow
   - [x] Build wireframe
-  - [ ] Design media card
+  - [X] Design media card
   - [X] Build slideshow
     - [X] Build frame
       - [X] Main image
         - [X] Fill certain ratio so every image is same size
-      - [ ] Bottom small view
+      - [~] Bottom small view
       - [X] prev/next buttons
       - [X] captions
     - [X] Connect js
@@ -29,12 +33,12 @@
   - [ ] Add JavaScript for
     - [X] Slider animations
     - [ ] Mobile nav
-    - [ ] Extended image modals
-  - [ ] Polish image modals
-  - [ ] Add animations
+    - [X] Extended image modals
+  - [X] Polish image modals
+  - [X] Add animations
   - [ ] Add media queries
   - [X] Add images
-  - [ ] Add descriptions
+  - [x] Add descriptions
 
 ---
 
